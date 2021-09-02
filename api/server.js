@@ -12,7 +12,7 @@ server.use(
 
 server.use("/api", usersRouter);
 
-server.use("*", (req, res) => {
+server.get("*", (req, res) => {
   res.sendFile(
     path.join(__dirname, "super-simple-front-end/build", "index.html")
   );
