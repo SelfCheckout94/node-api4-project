@@ -1,63 +1,23 @@
 const users = [
   {
-    name: "Ashen One",
+    username: "Ashen One",
+    password: "quality",
     id: 1,
   },
   {
-    name: "Fire Keeper",
+    username: "Patches",
+    password: "unbreakable",
     id: 2,
   },
   {
-    name: "Andre",
+    username: "Andre",
+    password: "prithee",
     id: 3,
   },
   {
-    name: "Greirat",
+    username: "Seigward",
+    password: "hmmmm",
     id: 4,
-  },
-  {
-    name: "Hawkwood",
-    id: 5,
-  },
-  {
-    name: "Shrine Handmaiden",
-    id: 6,
-  },
-  {
-    name: "Ludleth",
-    id: 7,
-  },
-  {
-    name: "Siegward",
-    id: 8,
-  },
-  {
-    name: "Yoel",
-    id: 9,
-  },
-  {
-    name: "Eygon",
-    id: 10,
-  },
-  {
-    name: "Irina",
-    id: 11,
-  },
-  {
-    name: "Unbreakable Patches",
-    id: 12,
-  },
-  {
-    name: "Picklepum",
-    id: 13,
-  },
-  {
-    name: "Sister Friede",
-    id: 14,
-  },
-  {
-    name: "Gael",
-    id: 15,
   },
 ];
 

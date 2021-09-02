@@ -6,7 +6,7 @@ const usersRouter = require("./users/users-router");
 server.use(express.json());
 server.use(cors());
 
-server.use("/api/users", usersRouter);
+server.use("/api", usersRouter);
 
 server.use("*", (req, res) => {
   res.json({
