@@ -29,6 +29,25 @@ router.post("/register", async (req, res, next) => {
   }
 });
 
+router.post("/login", async (req, res, next) => {
+  const { body } = req;
+  try {
+    if (!body.username || !body.password) {
+      res.status(400).json({
+        message: "A username and password are required",
+      });
+    } else {
+      await Users.login(body);
+      res.status(200).json({
+        message:
+          "Welcome to the greatest but most flawed backend you have ever seen",
+      });
+    }
+  } catch (err) {
+    next;
+  }
+});
+
 // eslint-disable-next-line no-unused-vars
 router.use((err, req, res, next) => {
   res.status(err.status || 500).json({

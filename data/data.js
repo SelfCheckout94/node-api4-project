@@ -1,6 +1,6 @@
 const users = [
   {
-    username: "Ashen One",
+    username: "AshenOne",
     password: "quality",
     id: 1,
   },
