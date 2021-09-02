@@ -6,12 +6,16 @@ const path = require("path");
 
 server.use(express.json());
 server.use(cors());
-server.use(express.static(path.join(__dirname, "client/build")));
+server.use(
+  express.static(path.join(__dirname, "super-simple-front-end/build"))
+);
 
 server.use("/api", usersRouter);
 
 server.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  res.sendFile(
+    path.join(__dirname, "super-simple-front-end/build", "index.html")
+  );
 });
 
 module.exports = server;
